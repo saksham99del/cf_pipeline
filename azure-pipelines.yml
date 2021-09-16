@@ -34,3 +34,13 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(C:\Users\SAKSHAM\Desktop\Terraform_Practice\cf_terraform_practice_3\cf_pipeline_practice)'
+    includeRootFolder: true 
+    archiveType: 'zip' 
+    tarCompression: 'gz' 
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip' 
+    replaceExistingArchive: true 
+    
