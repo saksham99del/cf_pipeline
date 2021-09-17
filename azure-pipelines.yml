@@ -39,6 +39,6 @@ steps:
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip' 
     replaceExistingArchive: true 
 
-  - publish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    artifact: 'saksham'
-    displayName: 'publishing'
+- publish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+  artifact: 'saksham'
+  displayName: 'publishing'
