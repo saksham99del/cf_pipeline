@@ -37,10 +37,9 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(C:\Users\SAKSHAM\Desktop\Terraform_Practice\cf_terraform_practice_3\cf_pipeline_practice)'
+    rootFolderOrFile: '$(Build.BinariesDirectory)'
     includeRootFolder: true 
     archiveType: 'zip' 
-    tarCompression: 'gz' 
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip' 
     replaceExistingArchive: true 
     
